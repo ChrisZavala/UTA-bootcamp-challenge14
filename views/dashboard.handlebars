@@ -14,24 +14,24 @@
       <button type="submit" class="btn">Create</button>
     </form>
   </div>
-  <div class = "column">
+  {{!-- <div class = "column">
     <h2>About Me</h2>
     {{> user-info}}
-  </div>
+  </div> --}}
 
 </section>
 
 {{#if posts.length}}
 <section>
-  <h2>Your Posts</h2>
-  <ol>
+  {{!-- <h2>Your Posts</h2> --}}
+  
     {{#each posts as |post|}}
     <li>
       {{> post-info post}}
       <a href="/dashboard/edit/{{post.id}}" class="edit-link">Edit post</a>
     </li>
     {{/each}}
-  </ol>
+  
 </section>
 {{/if}}
 
