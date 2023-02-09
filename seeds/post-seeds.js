@@ -16,7 +16,13 @@ const postData = [
     title: "Unit Testing is for suckers",
     post_text:
       "Please do it before you company pays the price for lack of unit testing",
-    user_id: 2,
+    user_id: 4,
+  },
+  {
+    title: "Jalen Hurts not only throws a football but he knows more about Hooks than anybody",
+    post_text:
+      "One of the best hooks writer I have ever seen!",
+    user_id: 5,
   },
 ];
 
