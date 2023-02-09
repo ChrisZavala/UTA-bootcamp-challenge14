@@ -7,12 +7,12 @@ const commentData = [
     user_id: 1
   },
   {
-    comment_text: "Handlebars partials help you with avoiding to write repetitive code",
+    comment_text: "Smoke em if you got then",
     post_id: 1,
     user_id: 4
   },
   {
-    comment_text: "I love every single form potatoes can be made",
+    comment_text: "There goes Superman high in the sky!",
     post_id: 4,
     user_id: 2
   },

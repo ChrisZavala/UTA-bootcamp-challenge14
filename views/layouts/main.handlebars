@@ -5,22 +5,23 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>The Tech Blog</title>
-  <link rel="stylesheet" href="../../public/css/jass.css">
-  <link rel="stylesheet" href="../../public/css/style.css">
+  <link rel="stylesheet" href="/css/jass.css">
+  <link rel="stylesheet" href="/css/style.css">
 </head>
 
 <body>
   <div class="flex-column justify-space-around">
     <header class="display-flex justify-space-between align-center p-2">
       <h1>
-        <a href="/">Home</a>
+        <a href="/">The Tech Blog</a>
       </h1>
       <nav>
-        {{#if loggedIn}}
-          <a href="../dashboard.handlebars">Dashboard</a>
+          <span><a href="/">Home</a></span> 
+          {{#if loggedIn}}
+          <a href="/dashboard">Dashboard</a>
           <button id="logout" class="btn-no-style">Logout</button>
           {{else}}
-          <a href="../login.handlebars">Login</a>
+          <a href="/login">Login</a>
           {{/if}}
         </nav>
     </header>
@@ -34,9 +35,11 @@
   </div>
    <!-- Render script for logged in users only -->
    {{#if loggedIn}}
-  <script src="../../public/js/logout.js"></script>
+  <script src="/js/logout.js"></script>
   {{/if}}
 
 </body>
 
 </html>
+
+
