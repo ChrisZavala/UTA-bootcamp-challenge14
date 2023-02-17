@@ -15,6 +15,7 @@
   - [How To Contribute](#how-to-contribute)
   - [Author](#author)
   - [Test](#test)
+  - [Live Site](#live-site)
   - [Screenshots](#screenshots)
 
   ## Installation 
@@ -79,7 +80,10 @@ SOFTWARE.
 
   ## Test
  The user can test the functicallity of this application for their use. Please report any issues or bugs to make this an even better user experience.  
- 
+
+ ## Live Site
+  [Click to see the live site](https://polar-castle-47001.herokuapp.com/)
+
   ## Screenshots:
 ![Alt text](./assets/images/diagramtoshowdesig.jpg)
 ![Alt text](./assets/images/Image%202-12-23%20at%2010.07%20PM.jpg)
