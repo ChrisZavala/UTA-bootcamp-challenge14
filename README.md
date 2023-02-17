@@ -84,9 +84,9 @@ SOFTWARE.
 ![Alt text](./assets/images/diagramtoshowdesig.jpg)
 ![Alt text](./assets/images/Image%202-12-23%20at%2010.07%20PM.jpg)
 ![Alt text](./assets/images/Image%202-12-23%20at%2010.08%20PM.jpg)
-![Alt text](./assets/images/Image%202-12-23%20at%2010.10%20PM%20(1).jpg)
+![Alt text](./assets/images/Image%202-12-23%20at%2010.10%20PM%20(2).jpg)
 ![Alt text](./assets/images/Image%202-12-23%20at%2010.10%20PM.jpg)
-![Alt text](./assets/images/Image%202-12-23%20at%2010.11%20PM%20(1).jpg)
+![Alt text](./assets/images/Image%202-12-23%20at%2010.11%20PM.jpg)
 ![Alt text](./assets/images/Image%202-12-23%20at%2010.12%20PM.jpg)
 
 
