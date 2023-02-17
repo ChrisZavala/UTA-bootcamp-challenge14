@@ -1,37 +1,33 @@
-<article>
-  <a href="/dashboard"> &larr; Back to dashboard</a>
-  <h2>
-    Edit Post
-  </h2>
-  <form class="edit-post-form">
-    <div>
-      <input name="post-title" type="text" value="{{post.title}}" />
-    </div>
-    <div>
-      <textarea name="post-text">{{post.post_text}}</textarea>
-    </div>
-    <div>
-      Posted by you on {{format_date post.created_at}}
-      |
-      <a href="/post/{{post.id}}">{{post.comments.length}} {{format_plural "comment" post.comments.length}}</a>
-    </div>
-    <button type="submit">Save post</button>
-    <button type="button" class="delete-post-btn">Delete post</button>
-  </form>
-</article>
-
-<form class="comment-form">
-  <div>
-    <textarea name="comment-body"></textarea>
-  </div>
-
-  <div>
-    <button type="submit">Add comment</button>
-  </div>
-</form>
-
-{{> comments post.comments}}
+<!-- edit post form -->
+<section>
+    <form id="edit-post-form" class="border custom-border-color border-1 is-rounded">
+        <div class="fw-semibold fs-3 custom-bg p-2 px-4">
+            Edit Post
+        </div>
+        <div class="mx-4 mt-2 mb-3 fw-semibold">
+            <div>
+                <label for="post-title" class="form-label fs-5 fw-semibold">Title</label>
+                <input type="text" id="post-title"  name="post-title" value="{{post.title}}" class="form-control border border-2 border-medium fs-5"/>
+            </div>
+            <div>
+                <label for="post-content" class="form-label fs-5 fw-semibold mt-2">Content</label>
+                <textarea id="post-content" name="post-content" class="form-control border border-2 border-medium fs-5">{{post.content}}</textarea>
+            </div>
+            <div class="d-grid mt-3">
+                <button type="submit" class="btn btn-primary is-info rounded-pill is-fullwidth">
+                    <i class="bi bi-pencil-square"></i>
+                    Save Edits
+                </button>
+            </div>
+            <div class="d-grid mt-3">
+                <button type= id="deletebtn" "button" id="delete-post-btn" class="btn btn-danger is-info rounded-pill is-fullwidth">
+                    <i class="bi bi-trash3"></i>
+                    Delete
+                </button>
+            </div>
+        </div>
+    </form>
+</section>
 
 <script src="/js/edit-post.js"></script>
 <script src="/js/delete-post.js"></script>
-<script src="/js/comment.js"></script>

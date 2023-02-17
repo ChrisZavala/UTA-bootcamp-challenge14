@@ -15,12 +15,9 @@ Post.init(
             type: DataTypes.STRING,
             allowNull: false
         },
-        post_text: {
-            type: DataTypes.TEXT,
-            allowNull: false,
-            validate: {
-                len: [1]
-            }
+        content: {
+            type: DataTypes.STRING,
+            allowNull: false
         },
         user_id: {
             type: DataTypes.INTEGER,
@@ -30,12 +27,12 @@ Post.init(
             }
         }
     },
-    {
+    {   
         sequelize,
         freezeTableName: true,
         underscored: true,
         modelName: 'post'
     }
-)
-//instead of driver it is Post
+);
+
 module.exports = Post;

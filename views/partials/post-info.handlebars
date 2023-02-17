@@ -1,9 +1,20 @@
-    <article class="post">
-      <div class="title">
-        <span><a href="/post/{{id}}">{{title}}</a></span><span style="float:right">Posted by {{user.username}} on {{format_date created_at}}</span><br>
-        {{!-- <span style="float:right">{{comments.length}} {{format_plural "comment" comments.length}}</span> --}}
-      </div>
-      <div class = "content">
-          <p>{{post_text}}</p>
-      </div>
-    </article>
+<!-- container for post -->
+<article class="post-section border custom-border-color border-3 rounded my-2">
+    <div class="custom-bg d-flex flex-column p-2 px-4">
+        <a href="/post/{{id}}" class="text-decoration-none text-white fw-semibold fs-4">
+            {{title}}
+        </a>
+        <div class="creator-info">
+            Posted by {{user.username}} on {{format_date created_at}}
+        </div>
+    </div>
+    <div class="fs-5 py-2 px-4">
+        {{content}}
+    </div>
+    <div class="pb-2 px-4">
+        <a href="/post/{{id}}" class="text-reset text-decoration-none fw-semibold creator-info">
+            <i class="bi bi-chat-square"></i>
+            {{comments.length}} {{format_plural "comment" comments.length}}
+        </a>
+    </div>
+</article>

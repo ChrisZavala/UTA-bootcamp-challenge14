@@ -1,213 +1,198 @@
+:root {
+  --primary-color: #76a6d2;
+  --secondary-color: #003566;
+  --tertiary-color: #f5f7f3;
+  --shade-color: #24212E;
+}
+
 * {
-    box-sizing: border-box;
-  }
-  
-  body, html {
-    height: 100%;
-    padding: 0;
-    margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
-    color: #333;
-    background-color: lightgray;
-  }
-  
-  a {
-    text-decoration: none;
-    color: black;
-    font-weight: bold;
-    transition: color .1s;
-  }
-  
-  a:hover {
-    color: #3486eb;
-  }
-  
-  button {
-    background-color: #225ca3;
-    border: 0;
-    padding: 1%;
-    color: white;
-    font-weight: bold;
-    transition: background-color .1s;
-    cursor: pointer;
-    border-radius: 5px;
-  }
-  
-  button:hover {
-    background-color: #3486eb;
-  }
-  
-  .post-list {
-    margin: 0;
-    padding: 0;
-    list-style-type:none;
-  }
-  
-  textarea, input {
-    padding: .5%;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-  }
-  
-  textarea:focus, input:focus {
-    outline: none;
-    border: 1px solid #3486eb;
-  }
-  
-  textarea {
-    min-width: 40%;
-    min-height: 100px;
-  }
-  
-  form > div {
-    margin-bottom: 2%;
-  }
-  
-  form label {
-    display: block;
-  }
-  
-  .wrapper {
-    width: 100%;
-    min-height: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-  }
-  
-  header {
-    border-bottom: 1px solid #ccc;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 1%;
-    background-color: aquamarine;
-    height: 150px;
-  }
-  
-  header h1 {
-    border: 2px outset #7d7d7d;
-    border-radius: 5px;
-    background-color: whitesmoke;
-    padding: 1.25rem;
-    box-shadow: 10px 5px 5px darkgrey;
-    }
-  
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--shade-color);
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  background: url(../images/—Pngtree—technical\ abstract\ technology\ background\ with_1242357.jpg) no-repeat fixed center;
+  background-size: cover;
+}
+#urmomz {
+  text-decoration: double;
+  font-size: 20px;
+}
+
+.container.is-fluid {
+  width: 50%;
+}
+#contactme {
+  font-size: 10rem;
+}
+
+header {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 9999;
+  border-bottom: 1px solid #acb0b4;
+}
+#cat{
+  align-items: center;
+  padding-left: 50rem;
+}
+
+.custom-bg {
+  background-color: var(--primary-color);
+  color: var(--tertiary-color);
+}
+
+.custom-border-color {
+  border-color: var(--secondary-color)!important;
+}
+#icon {
+  position: center;
+  text-align: center;
+}
+.nav-link {
+  color:  #76a6d2;
+}
+.nav-item {
+  color: white;
+  margin: 0 1.5rem;
+}
+
+.nav-item:hover, .nav-item button:hover {
+  color: white;
+}
+
+#logout {
+  font-size: 16px;
+}
+
+h1 {
+  background: darkgray;
+  background-size: cover;
+}
+
+h1 a {
+  margin: 0.5rem 3rem;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+h1 .nav-link {
+  font-size: 3rem;
+  color:  #76a6d2;
+  text-shadow: 3px 3px 10px white; 
+}
+
+h1 .nav-link:hover {
+  color: white;
+}
+#YourPost{
+  color:  white;
+  font-size: 3rem;
+  font-weight: bolder;
+}
+.footer-show {
+  align-items: center;
+}
+main {
+  flex: 1;
+  width: 1236px;
+  padding: 24px 48px;
+  transition: all .2s ease-in-out;
+  /* background-color: green (255, 255, 255, 0.8); */
+}
+
+main ul {
+  list-style: none;
+}
+.footer {
+  background-color: gray;
+  padding-bottom: 5rem;
+  align-items: center;
+}
+
+.footer .icon{
+  align-items: center;
+}
+#deletebtn{
+  --bs-btn-bg: green;
+}
+
+#login-form, 
+#signup-form, 
+.post-section, 
+#post-form,
+#comment-form,
+.comment, 
+#edit-post-form {
+  background-color: white;
+}
+
+#signup-form, #login-form {
+  max-width: 30rem;
+}
+
+#signup-link, #login-link {
+  padding: 0 0.25rem;
+}
+
+#comment-form textarea, 
+#post-form textarea, 
+#edit-post-form textarea {
+  min-height: 10vh;
+}
+
+.creator-info {
+  font-size: 16px;
+}
+
+.new-post-btn, .cancel-post-btn {
+  max-width: 270px;
+}
+
+@media screen and (max-width: 1400px) {
   main {
-    flex: 1;
-    padding: 2% 4%;
+      width: 70%; 
   }
-  
-  nav {
-   display: inline-block;
-   text-align: center;
-   padding: 14px;
-   color: rgb(0, 0, 0);
-   text-decoration: none;
-   font-size: 17px;
-   font-weight: bolder;
+}
+
+@media screen and (max-width: 992px) {
+  main {
+      width: 80%; 
   }
-  
-  .btn-no-style {
-    background: none;
-    border: none;
-    padding: 0;
-    cursor: pointer;
-    text-decoration: none;
-    color: #225ca3;
-    font-size: 100%;
-    font-weight: bold;
-    transition: color .1s;
-    margin-left: 16px;
+
+  #comment-form textarea, 
+  #post-form textarea, 
+  #edit-post-form textarea {
+      min-height: 14vh;
   }
-  
-  .btn-no-style:hover {
-    background: none;
-    color: #3486eb;
+}
+
+@media screen and (max-width: 576px) {
+  main {
+      width: 90%; 
+      padding: 12px 24px;
   }
-  
-  .delete-post-btn {
-    background-color: gray;
+
+  h1 a {
+      margin: 0.5rem auto;
   }
-  
-  .delete-post-btn:hover {
-    background-color: #ff643d;
+
+  h1 .nav-link {
+      font-size: 2rem;
+      padding: 0.5rem!important;
   }
-  
-  .post {
-    margin-bottom: 2%;
-    line-height: 150%;
-    /* border-style: solid; */
-    border-width: 5px;
-    padding: 5px;
+
+  .nav-item {
+      margin: 0 2vw;
   }
-  
-  .post .title {
-    font-style: italic;
-    font-size: 12px;
-    color: #7d7d7d;
-    background-color: aquamarine;
-    padding-top: 10px;
-    padding-bottom: 6px;
-    padding-right: 4px;
-    padding-left: 4px;
+
+  .nav-item, #logout {
+      font-size: 16px;
   }
-  
-  .post .title span {
-    font-style: italic;
-    font-size: 18px;
-    color: #7d7d7d;
-    padding-top: 2px;
-  }
-  
-  .edit-link {
-    display: block;
-    margin: -1.5% 0 2% 0;
-  }
-  
-  .upvote-btn {
-    background-color: #197d0f;
-    transition: background-color .1s;
-  }
-  
-  .upvote-btn:hover {
-    background-color: #1f9c13;
-  }
-  
-  .comment-form {
-    margin-bottom: 5%;
-  }
-  
-  .comment {
-    padding: 1%;
-    margin-bottom: 1%;
-  }
-  
-  .comment:nth-child(odd) {
-    background-color: rgb(162, 159, 159);
-  }
-  
-  .comment .meta {
-    font-size: 90%;
-    margin-bottom: .5%;
-    opacity: .6;
-  }
-  
-  .new-post-form input, textarea {
-    width: 80%;
-  }
-  
-  .edit-post-form {
-    margin-bottom: 5%;
-  }
-  
-  .row {
-      display: flex;
-  }
-  
-  .column {
-      flex: 50%;
-      padding: 1.25rem;
-  }
-  
+}

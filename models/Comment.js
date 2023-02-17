@@ -2,7 +2,7 @@ const { Model, DataTypes } = require('sequelize');
 const sequelize = require('../config/connection');
 
 class Comment extends Model {}
-//pulled this from 25-Ins_Literals models->car.js and just changed the variables and make a couple of changes. 
+//pulled this from 25-Ins_Literals models->car.js and just changed the variables and make a couple of changes.
 Comment.init(
     {
         id: {
@@ -39,6 +39,6 @@ Comment.init(
         underscored: true,
         modelName: 'comment'
     }
-)
+);
 
 module.exports = Comment;

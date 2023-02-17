@@ -1,30 +1,22 @@
 const { Post } = require("../models");
 
 const postData = [
-  {
-    title: "To ORM or not to ORM?",
-    post_text:
-      "Do you have time to do your Project 2 with this challenge already due?",
-    user_id: 1,
-  },
-  {
-    title: "Password hashing is a must for most websites. ",
-    post_text: "The only hackers that are cool are in the movies, like that dude in the 90's movie Hackers!",
-    user_id: 1,
-  },
-  {
-    title: "Unit Testing is for suckers",
-    post_text:
-      "Please do it before you company pays the price for lack of unit testing",
-    user_id: 4,
-  },
-  {
-    title: "Jalen Hurts not only throws a football but he knows more about Hooks than anybody",
-    post_text:
-      "One of the best hooks writer I have ever seen!",
-    user_id: 5,
-  },
-];
+	{
+	  title: 'Give me da Cash!',
+	  content:'Making the fight for the cash',
+	  user_id: 1,
+	},
+	{
+	  title: 'Please invest please we need the money',
+	  content:'How much can you give me Jeff Bezos? A lot',
+	  user_id: 2,
+	},
+	{
+	  title: 'Minnie the Moucher',
+	  content:'Hiddy hiddy hiddy hoe!',
+	  user_id: 3,
+	},
+  ];
 
 const seedPosts = () => Post.bulkCreate(postData);
 

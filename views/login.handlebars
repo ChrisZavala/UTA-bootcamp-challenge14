@@ -1,17 +1,59 @@
-<form class="login-form">
-  <div>
-    <label for="email-login">Email:</label>
-    <input type="text" id="email-login" />
-  </div>
-  <div>
-    <label for="password-login">Password:</label>
-    <input type="password" id="password-login" />
-  </div>
-  <div>
-    <button type="submit">Login</button>
-  </div>
+
+<!-- Login Form -->
+<form id="login-form" class="border custom-border-color border-3 rounded my-2 mx-auto is-rounded">
+    <div class="custom-bg fw-semibold fs-3 p-2 px-4">
+        Login
+    </div>
+    <div class="mx-4 my-2 fw-semibold">
+        <div>
+            <label for="username-login" class="form-label fs-5 fw-semibold">Username</label>
+            <input type="text" id="username-login" class="form-control border border-2 border-medium fs-5"/>
+        </div>
+        <div>
+            <label for="password-login" class="form-label fs-5 fw-semibold mt-2">Password</label>
+            <input type="password" id="password-login" class="form-control border border-2 border-medium fs-5"/>
+        </div>
+        <div class="d-grid mt-3">
+            <button type="submit" class="btn btn-primary mt-5 button is-info is-rounded is-fullwidth">
+                <i class="bi bi-box-arrow-in-right"></i>
+                Login
+            </button>
+        </div>
+        <div class="d-flex align-items-center pt-2">
+            Don't have an account?
+            <button id="signup-link" class="btn btn-link fw-semibold">Sign up</button>
+        </div>
+    </div>
 </form>
 
-<a href="/signup">Sign up instead?</a>
+<form id="signup-form" class="border custom-border-color border-3 rounded my-2 mx-auto d-none">
+    <div class="custom-bg fw-semibold fs-3 p-2 px-4">
+        Sign Up
+    </div>
+    <div class="mx-4 my-2 fw-semibold">
+        <div>
+            <label for="username-signup" class="form-label fs-5 fw-semibold">Username</label>
+            <input type="text" id="username-signup" class="form-control border border-2 border-medium fs-5"/>
+        </div>
+        <div>
+            <label for="password-signup" class="form-label fs-5 fw-semibold mt-2">Password</label>
+            <input type="password" id="password-signup" class="form-control border border-2 border-medium fs-5"/>
+            <div class="form-text">
+                Your password must be at least 4 characters long.
+            </div>
+        </div>
+        <div class="d-grid mt-3">
+            <button type="submit" class="btn btn-primary mt-5 button is-info is-rounded is-fullwidth">
+                <i class="bi bi-box-arrow-in-right"></i>
+                Sign Up
+            </button>
+        </div>
+        <div class="d-flex align-items-center pt-2">
+            Already have an account?  
+            <button id="login-link" class="btn btn-link fw-semibold">Login</button>
+        </div>
+        
+    </div>
+</form>
 
 <script src="/js/login.js"></script>

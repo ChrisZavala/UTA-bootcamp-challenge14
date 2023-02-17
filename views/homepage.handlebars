@@ -1,7 +1,8 @@
-<ul class="post-list">
-  {{#each posts as |post|}}
-  <li>
-    {{> post-info post }}
-  </li>
-  {{/each}}
+<ul class="d-flex flex-column list-group">
+    {{#each posts as |post|}}
+    <li>
+        <!-- import post-info partial -->
+        {{> post-info post}}
+    </li>
+    {{/each}}
 </ul>

@@ -1,37 +1,49 @@
-<section class="row">
-  <div class = "column">
-    <h2>Create New Post</h2>
-
-    <form class="new-post-form">
-      <div>
-        <label for="post-title">Title</label>
-        <input type="text" id="post-title" name="post-title" />
-      </div>
-      <div>
-        <label for="post-text">Text</label>
-        <textarea id="post-text" name="post-text"></textarea>
-      </div>
-      <button type="submit" class="btn">Create</button>
+<!-- create post form -->
+<section>
+    <div class="d-grid mx-auto my-2 mb-3">
+        <button type="button" class="new-post-btn btn btn-primary btn-lg fw-semibold rounded-pill mx-auto">
+            <i class="bi bi-plus-lg"></i>
+            Create Post
+        </button>
+        <button type="button" class="cancel-post-btn btn btn-primary btn-lg is-info rounded-pill is-fullwidth mx-auto d-none">
+            <i class="bi bi-x-lg"></i>
+            Cancel Post
+        </button>
+    </div>
+    <form id="post-form" class="border custom-border-color rounded my-2 d-none">
+        <div class="fw-semibold fs-3 custom-bg p-2 px-4">
+            Create Post
+        </div>
+        <div class="mx-4 mt-2 mb-3 fw-semibold">
+            <div>
+                <label for="post-title" class="form-label fs-5 fw-semibold">Title</label>
+                <input type="text" id="post-title"  name="post-title" class="form-control border border-2 border-medium fs-5"/>
+            </div>
+            <div>
+                <label for="post-content" class="form-label fs-5 fw-semibold mt-2">Content</label>
+                <textarea id="post-content" name="post-content" class="form-control border border-2 border-medium fs-5"></textarea>
+            </div>
+            <div class="d-grid mt-3">
+                <button type="submit" class="btn btn-primary is-info rounded-pill is-fullwidth">
+                    <i class="bi bi-chat-left-text"></i>
+                    Post
+                </button>
+            </div>
+        </div>
     </form>
-  </div>
-  {{!-- <div class = "column">
-    <h2>About Me</h2>
-    {{> user-info}}
-  </div> --}}
-
 </section>
 
 {{#if posts.length}}
 <section>
-  {{!-- <h2>Your Posts</h2> --}}
-  
-    {{#each posts as |post|}}
-    <li>
-      {{> post-info post}}
-      <a href="/dashboard/edit/{{post.id}}" class="edit-link">Edit post</a>
-    </li>
-    {{/each}}
-  
+    <h3 id="YourPost" class="border-bottom border-dark pb-2 fw-semibold">Your Posts</h3>
+    <ul class="d-flex flex-column list-group">
+        {{#each posts as |post|}}
+        <li>
+            <!-- import dashboard-post-info partial for editing -->
+            {{> dashboard-post-info post}}
+        </li>
+        {{/each}}
+    </ul>
 </section>
 {{/if}}
 
